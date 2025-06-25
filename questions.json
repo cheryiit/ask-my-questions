@@ -10,7 +10,7 @@
         "d": "Thoughts about the sensitivity of the staff",
         "e": "Measurement of air pollution"
       },
-      "correct": "d"
+      "correct": "b"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
         "d": "Mobile app",
         "e": "Analytics"
       },
-      "correct": "a"
+      "correct": "e"
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
         "d": "April 2024",
         "e": "not yet published"
       },
-      "correct": "b"
+      "correct": "a"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
         "d": "Radiowaves",
         "e": "Microwaves"
       },
-      "correct": "a"
+      "correct": "c"
     },
     {
       "id": 6,
@@ -166,7 +166,7 @@
         "d": "20 mA",
         "e": "10 mA"
       },
-      "correct": "d"
+      "correct": "e"
     },
     {
       "id": 15,
