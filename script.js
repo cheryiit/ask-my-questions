@@ -238,7 +238,7 @@ class QuizApp {
         if (isCorrect) {
             setTimeout(() => {
                 this.nextQuestion();
-            }, 1000); // 1 second delay to show the correct answer
+            }, 300); // 0.3 second delay to show the correct answer
         } else {
             // Enable next button for wrong answers (manual advance)
             this.nextBtn.disabled = false;
