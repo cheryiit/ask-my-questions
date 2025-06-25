@@ -27,8 +27,13 @@
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
-                <div class="question-counter">
-                    Question <span id="current-question">1</span> of <span id="total-questions-counter">20</span>
+                <div class="quiz-info">
+                    <div class="question-counter">
+                        Question <span id="current-question">1</span> of <span id="total-questions-counter">20</span>
+                    </div>
+                    <div class="timer">
+                        ⏱️ <span id="timer-display">00:00</span>
+                    </div>
                 </div>
             </div>
 
@@ -63,7 +68,12 @@
                         <span class="result-label">Wrong Answers:</span>
                         <span class="result-value wrong" id="wrong-count">0</span>
                     </div>
+                    <div class="result-item">
+                        <span class="result-label">Time Taken:</span>
+                        <span class="result-value time" id="time-taken">00:00</span>
+                    </div>
                 </div>
+                <p class="completion-message" id="completion-message">🎊 Congratulations! You completed the quiz!</p>
                 <button id="restart-btn" class="btn btn-primary">Take Quiz Again</button>
             </div>
         </div>

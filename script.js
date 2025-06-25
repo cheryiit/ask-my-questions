@@ -7,6 +7,8 @@ class QuizApp {
         this.userAnswers = [];
         this.isAnswered = false;
         this.currentShuffledMapping = {};
+        this.startTime = null;
+        this.timerInterval = null;
         
         this.initializeElements();
         this.loadQuestions();
@@ -31,12 +33,17 @@ class QuizApp {
         this.questionText = document.getElementById('question-text');
         this.optionsContainer = document.getElementById('options-container');
         
+        // Timer elements
+        this.timerDisplay = document.getElementById('timer-display');
+        
         // Results elements
         this.finalScore = document.getElementById('final-score');
         this.totalScore = document.getElementById('total-score');
         this.scorePercentage = document.getElementById('score-percentage');
         this.correctCount = document.getElementById('correct-count');
         this.wrongCount = document.getElementById('wrong-count');
+        this.timeTaken = document.getElementById('time-taken');
+        this.completionMessage = document.getElementById('completion-message');
     }
 
     async loadQuestions() {
@@ -70,6 +77,44 @@ class QuizApp {
         return shuffled;
     }
 
+    startTimer() {
+        this.startTime = Date.now();
+        this.timerInterval = setInterval(() => {
+            this.updateTimerDisplay();
+        }, 1000);
+    }
+
+    stopTimer() {
+        if (this.timerInterval) {
+            clearInterval(this.timerInterval);
+            this.timerInterval = null;
+        }
+    }
+
+    updateTimerDisplay() {
+        if (!this.startTime) return;
+        
+        const elapsed = Date.now() - this.startTime;
+        const minutes = Math.floor(elapsed / 60000);
+        const seconds = Math.floor((elapsed % 60000) / 1000);
+        
+        const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        this.timerDisplay.textContent = timeString;
+    }
+
+    getElapsedTime() {
+        if (!this.startTime) return 0;
+        return Date.now() - this.startTime;
+    }
+
+    formatTime(milliseconds) {
+        const totalSeconds = Math.floor(milliseconds / 1000);
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        
+        return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
     startQuiz() {
         // Shuffle questions
         this.shuffledQuestions = this.shuffleArray(this.questions);
@@ -77,6 +122,9 @@ class QuizApp {
         this.score = 0;
         this.userAnswers = [];
         this.isAnswered = false;
+        
+        // Start timer
+        this.startTimer();
         
         // Switch to quiz screen
         this.showScreen('quiz');
@@ -208,20 +256,44 @@ class QuizApp {
     }
 
     showResults() {
+        // Stop timer
+        this.stopTimer();
+        
         const totalQuestions = this.shuffledQuestions.length;
         const percentage = Math.round((this.score / totalQuestions) * 100);
+        const elapsedTime = this.getElapsedTime();
+        const timeString = this.formatTime(elapsedTime);
         
         // Update results display
         this.finalScore.textContent = this.score;
         this.scorePercentage.textContent = `${percentage}%`;
         this.correctCount.textContent = this.score;
         this.wrongCount.textContent = totalQuestions - this.score;
+        this.timeTaken.textContent = timeString;
+        
+        // Update completion message based on performance
+        let message = '🎊 Congratulations! You completed the quiz!';
+        if (percentage >= 90) {
+            message = `🏆 Excellent! You completed the quiz in ${timeString} with ${percentage}% accuracy!`;
+        } else if (percentage >= 70) {
+            message = `👍 Well done! You completed the quiz in ${timeString} with ${percentage}% accuracy!`;
+        } else if (percentage >= 50) {
+            message = `📚 Good effort! You completed the quiz in ${timeString}. Keep studying!`;
+        } else {
+            message = `💪 You completed the quiz in ${timeString}. More practice will help!`;
+        }
+        this.completionMessage.textContent = message;
         
         // Show results screen
         this.showScreen('results');
     }
 
     restartQuiz() {
+        // Reset timer
+        this.stopTimer();
+        this.startTime = null;
+        this.timerDisplay.textContent = '00:00';
+        
         this.showScreen('welcome');
     }
 
