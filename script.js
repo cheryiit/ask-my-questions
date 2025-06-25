@@ -131,6 +131,7 @@ class QuizApp {
         
         const question = this.shuffledQuestions[this.currentQuestionIndex];
         const correctAnswer = question.correct;
+        const isCorrect = selectedAnswer === correctAnswer;
         
         // Mark as answered
         this.isAnswered = true;
@@ -140,11 +141,11 @@ class QuizApp {
             questionId: question.id,
             userAnswer: selectedAnswer,
             correctAnswer: correctAnswer,
-            isCorrect: selectedAnswer === correctAnswer
+            isCorrect: isCorrect
         });
         
         // Update score
-        if (selectedAnswer === correctAnswer) {
+        if (isCorrect) {
             this.score++;
         }
         
@@ -161,8 +162,16 @@ class QuizApp {
             }
         });
         
-        // Enable next button
-        this.nextBtn.disabled = false;
+        // If correct answer, auto-advance after a short delay
+        // If wrong answer, require manual next button click
+        if (isCorrect) {
+            setTimeout(() => {
+                this.nextQuestion();
+            }, 1000); // 1 second delay to show the correct answer
+        } else {
+            // Enable next button for wrong answers (manual advance)
+            this.nextBtn.disabled = false;
+        }
     }
 
     nextQuestion() {
