@@ -6,6 +6,7 @@ class QuizApp {
         this.score = 0;
         this.userAnswers = [];
         this.isAnswered = false;
+        this.currentShuffledMapping = {};
         
         this.initializeElements();
         this.loadQuestions();
@@ -98,10 +99,20 @@ class QuizApp {
         // Clear previous options
         this.optionsContainer.innerHTML = '';
         
-        // Create options
+        // Shuffle options while keeping track of correct answer
         const options = Object.entries(question.options);
-        options.forEach(([letter, text]) => {
-            const optionElement = this.createOptionElement(letter, text);
+        const shuffledOptions = this.shuffleArray(options);
+        
+        // Store the mapping for this question
+        this.currentShuffledMapping = {};
+        
+        // Create shuffled options with new letters
+        const letters = ['a', 'b', 'c', 'd', 'e'];
+        shuffledOptions.forEach(([originalLetter, text], index) => {
+            const newLetter = letters[index];
+            this.currentShuffledMapping[newLetter] = originalLetter;
+            
+            const optionElement = this.createOptionElement(newLetter, text);
             this.optionsContainer.appendChild(optionElement);
         });
         
@@ -131,15 +142,27 @@ class QuizApp {
         
         const question = this.shuffledQuestions[this.currentQuestionIndex];
         const correctAnswer = question.correct;
-        const isCorrect = selectedAnswer === correctAnswer;
+        
+        // Map the selected shuffled answer back to original
+        const originalSelectedAnswer = this.currentShuffledMapping[selectedAnswer];
+        const isCorrect = originalSelectedAnswer === correctAnswer;
+        
+        // Find which shuffled letter corresponds to the correct answer
+        let correctShuffledAnswer = null;
+        for (const [shuffledLetter, originalLetter] of Object.entries(this.currentShuffledMapping)) {
+            if (originalLetter === correctAnswer) {
+                correctShuffledAnswer = shuffledLetter;
+                break;
+            }
+        }
         
         // Mark as answered
         this.isAnswered = true;
         
-        // Store user answer
+        // Store user answer (using original letters for consistency)
         this.userAnswers.push({
             questionId: question.id,
-            userAnswer: selectedAnswer,
+            userAnswer: originalSelectedAnswer,
             correctAnswer: correctAnswer,
             isCorrect: isCorrect
         });
@@ -149,15 +172,15 @@ class QuizApp {
             this.score++;
         }
         
-        // Style all options
+        // Style all options based on shuffled positions
         const allOptions = this.optionsContainer.querySelectorAll('.option');
         allOptions.forEach(option => {
             option.classList.add('disabled');
             const answer = option.dataset.answer;
             
-            if (answer === correctAnswer) {
+            if (answer === correctShuffledAnswer) {
                 option.classList.add('correct');
-            } else if (answer === selectedAnswer && selectedAnswer !== correctAnswer) {
+            } else if (answer === selectedAnswer && !isCorrect) {
                 option.classList.add('wrong');
             }
         });
