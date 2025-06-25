@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupational Health & Safety Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Occupational Health & Safety Quiz</h1>
+            <p>Test your knowledge with randomly shuffled questions</p>
+        </header>
+
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <h2>Welcome to the Quiz!</h2>
+                <p>This quiz contains <span id="total-questions">20</span> questions about Occupational Health and Safety.</p>
+                <p>Questions will be presented in random order. Answer all questions to see your final score.</p>
+                <button id="start-test-btn" class="btn btn-primary">Start Test</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="question-counter">
+                    Question <span id="current-question">1</span> of <span id="total-questions-counter">20</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h3 id="question-text">Question text will appear here</h3>
+                <div class="options-container" id="options-container">
+                    <!-- Options will be dynamically generated -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button id="next-btn" class="btn btn-secondary" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <h2>🎉 Quiz Completed!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <small>/ <span id="total-score">20</span></small>
+                    </div>
+                    <p id="score-percentage">0%</p>
+                </div>
+                <div class="results-summary">
+                    <div class="result-item">
+                        <span class="result-label">Correct Answers:</span>
+                        <span class="result-value correct" id="correct-count">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Wrong Answers:</span>
+                        <span class="result-value wrong" id="wrong-count">0</span>
+                    </div>
+                </div>
+                <button id="restart-btn" class="btn btn-primary">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
