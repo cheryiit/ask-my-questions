@@ -2,243 +2,247 @@
   "questions": [
     {
       "id": 1,
-      "question": "Which of the following is not used for the health assessment of hazards that pose risk?",
+      "question": "What is Dependency Injection (DI)?",
       "options": {
-        "a": "Exposure time",
-        "b": "Exposure length", 
-        "c": "Harmful effects of substance",
-        "d": "Thoughts about the sensitivity of the staff",
-        "e": "Measurement of air pollution"
+        "a": "DI helps you couple your application objects to each other",
+        "b": "DI helps you decouple your application objects from each other",
+        "c": "DI helps you compile your application objects",
+        "d": "DI helps you encrypt your application objects",
+        "e": "DI helps you deploy your application objects"
       },
       "correct": "b"
     },
     {
       "id": 2,
-      "question": "Which of the following technologies is least used by health and safety professionals?",
+      "question": "In which ways can Dependency Injection (DI) be implemented?",
       "options": {
-        "a": "Robotics",
-        "b": "Equipment",
-        "c": "Wearables",
-        "d": "Mobile app",
-        "e": "Analytics"
+        "a": "Field and Constructor",
+        "b": "Setter and Constructor",
+        "c": "Method and Field",
+        "d": "Interface and Class",
+        "e": "Property and Method"
       },
-      "correct": "e"
+      "correct": "b"
     },
     {
       "id": 3,
-      "question": "Which of the following are among the main electrical injuries?",
+      "question": "Which annotation is used to handle GET requests in Spring?",
       "options": {
-        "a": "Electric",
-        "b": "Current Measurement",
-        "c": "Thermal burns",
-        "d": "Shock face",
-        "e": "Stubbing the toe"
+        "a": "@PostMapping",
+        "b": "@RequestMapping",
+        "c": "@GetMapping",
+        "d": "@GetMethod",
+        "e": "@HttpGet"
       },
       "correct": "c"
     },
     {
       "id": 4,
-      "question": "When did the regulation on DSE come into operation in our country?",
+      "question": "How configuration metadata can be represented?",
       "options": {
-        "a": "April 2013",
-        "b": "April 2012",
-        "c": "April 2011",
-        "d": "April 2024",
-        "e": "not yet published"
+        "a": "I. XML-Based only",
+        "b": "II. Annotation-Based only",
+        "c": "III. Java-Based only",
+        "d": "I. XML-Based II. Annotation-Based III. Java-Based",
+        "e": "None of the above"
       },
-      "correct": "a"
+      "correct": "d"
     },
     {
       "id": 5,
-      "question": "Which of the following is not a type of non-ionizing radiation?",
+      "question": "Which one is NOT a benefit of the Spring Framework?",
       "options": {
-        "a": "Extremely Low Frequency",
-        "b": "Very Low Frequency",
-        "c": "Extremely High Frequency",
-        "d": "Radiowaves",
-        "e": "Microwaves"
+        "a": "Dependency Injection",
+        "b": "Aspect-Oriented Programming",
+        "c": "Lightweight framework",
+        "d": "Built-in web server",
+        "e": "Inversion of Control"
       },
-      "correct": "c"
+      "correct": "d"
     },
     {
       "id": 6,
-      "question": "Which of the following is one of the important environmental problems in Turkey?",
+      "question": "Which annotation provides automatic wiring?",
       "options": {
-        "a": "Transgenic pollution",
-        "b": "Electromagnetic pollution",
-        "c": "Deforestation",
-        "d": "Erosion",
-        "e": "all of them"
-      },
-      "correct": "e"
-    },
-    {
-      "id": 7,
-      "question": "Which of the following is a certificate by an international standard issued organization on the environment?",
-      "options": {
-        "a": "4001",
-        "b": "9001",
-        "c": "12001",
-        "d": "14001",
-        "e": "1500"
-      },
-      "correct": "d"
-    },
-    {
-      "id": 8,
-      "question": "The studies to be carried out in determining the environmental impacts of the projects, the measures to be taken to prevent the negative effects, determination and evaluation of the selected location and technology alternatives, and the monitoring and control of the implementation of the projects are within the scope of... Which of the following is the expression that should come in the blank?",
-      "options": {
-        "a": "EIA",
-        "b": "EAI",
-        "c": "AEI",
-        "d": "AIE",
-        "e": "IEA"
-      },
-      "correct": "a"
-    },
-    {
-      "id": 9,
-      "question": "Which of the following is correct?",
-      "options": {
-        "a": "Beta particles pass through concrete",
-        "b": "Beta particles pass through lead",
-        "c": "Beta particles pass through aluminum",
-        "d": "Beta particles pass through paper",
-        "e": "Gamma particles pass through lead"
-      },
-      "correct": "d"
-    },
-    {
-      "id": 10,
-      "question": "A key concept underlying radiation protection programs is keeping each worker's occupational radiation dose... Which of the following is the expression that should come in the blank?",
-      "options": {
-        "a": "As Low As Recordable Achievable",
-        "b": "As Low As Reasonably Achievable",
-        "c": "As Low As Reasonably Actionable",
-        "d": "As Low As Reasonably Activable",
-        "e": "As Low As Reasonably Active"
-      },
-      "correct": "b"
-    },
-    {
-      "id": 11,
-      "question": "Which of the following is correct?",
-      "options": {
-        "a": "Current kills, not voltage",
-        "b": "Voltage kills, not current",
-        "c": "Resistance kills, not current",
-        "d": "None of them are true",
-        "e": "All of them"
-      },
-      "correct": "a"
-    },
-    {
-      "id": 12,
-      "question": "Which of the following is first in the RAM model?",
-      "options": {
-        "a": "Control",
-        "b": "Recognition",
-        "c": "Confirm",
-        "d": "Evaluation",
-        "e": "Anticipation"
-      },
-      "correct": "b"
-    },
-    {
-      "id": 13,
-      "question": "Which of the following is not one of the benefits of using OHS software?",
-      "options": {
-        "a": "Reporting and Metrics",
-        "b": "Manage Documentation",
-        "c": "Monitoring Employee",
-        "d": "Streamline Manual Processes",
-        "e": "Communication Across Multiple Sites"
+        "a": "@Component",
+        "b": "@Service",
+        "c": "@Autowired",
+        "d": "@Repository",
+        "e": "@Configuration"
       },
       "correct": "c"
     },
     {
-      "id": 14,
-      "question": "After which current value the respiratory muscles can be paralyzed?",
+      "id": 7,
+      "question": "Which scope attribute should be declared in Spring to produce a new bean instance each time one is needed?",
       "options": {
-        "a": "5 mA",
-        "b": "15 mA",
-        "c": "10 mA",
-        "d": "20 mA",
-        "e": "30 mA"
+        "a": "Singleton",
+        "b": "Prototype",
+        "c": "Request",
+        "d": "Session",
+        "e": "Application"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 8,
+      "question": "Which scope is default?",
+      "options": {
+        "a": "Prototype",
+        "b": "Request",
+        "c": "Session",
+        "d": "Singleton",
+        "e": "Application"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 9,
+      "question": "What is the difference between authentication and authorization?",
+      "options": {
+        "a": "Authentication is checking user permissions, authorization is verifying identity",
+        "b": "They are the same thing",
+        "c": "Authentication is user verification (who you are), authorization is permission checking (what you can do)",
+        "d": "Authentication is for databases, authorization is for web services",
+        "e": "Authentication is automatic, authorization is manual"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 10,
+      "question": "Which annotation is used to map a URL to either an entire class or a particular handler method?",
+      "options": {
+        "a": "@GetMapping",
+        "b": "@PostMapping",
+        "c": "@RequestMapping",
+        "d": "@PathVariable",
+        "e": "@RequestParam"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 11,
+      "question": "Which one scopes a bean definition to an HTTP session?",
+      "options": {
+        "a": "Singleton",
+        "b": "Prototype",
+        "c": "Request",
+        "d": "Session",
+        "e": "Application"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 12,
+      "question": "What is the difference between Spring Boot and Spring?",
+      "options": {
+        "a": "Spring Boot is slower than Spring",
+        "b": "Spring Boot requires more configuration than Spring",
+        "c": "Spring Boot is Spring's convention-over-configuration solution for creating stand-alone, production-grade Spring-based applications",
+        "d": "Spring Boot is completely different from Spring",
+        "e": "Spring Boot is only for web applications"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 13,
+      "question": "Which one is default template engine in Spring Boot?",
+      "options": {
+        "a": "JSP",
+        "b": "Freemarker",
+        "c": "Velocity",
+        "d": "Thymeleaf",
+        "e": "Mustache"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 14,
+      "question": "Which one is not a component annotation?",
+      "options": {
+        "a": "@Component",
+        "b": "@Service",
+        "c": "@Repository",
+        "d": "@Controller",
+        "e": "@Qualifier"
       },
       "correct": "e"
     },
     {
       "id": 15,
-      "question": "Which of the following does not need to be included in the environmental impact assessment?",
+      "question": "Where does the HTTP Request come first?",
       "options": {
-        "a": "Emission",
-        "b": "Discharge",
-        "c": "Noise control",
-        "d": "Lighting control",
-        "e": "Deep sea discharge"
-      },
-      "correct": "d"
-    },
-    {
-      "id": 16,
-      "question": "Which of the following is not one of the steps of the occupational hygiene program?",
-      "options": {
-        "a": "Identification of health hazards",
-        "b": "Assessment of health hazards",
-        "c": "Control of health hazards",
-        "d": "Keeping records of health hazards",
-        "e": "Training of health hazards"
-      },
-      "correct": "e"
-    },
-    {
-      "id": 17,
-      "question": "Which of the following is not one of the biological hazards?",
-      "options": {
-        "a": "Pathogens",
-        "b": "Allergens",
-        "c": "Zoonoses",
-        "d": "Subprions",
-        "e": "Prions"
-      },
-      "correct": "d"
-    },
-    {
-      "id": 18,
-      "question": "Which of the following is not an effective way to prevent electrical fires?",
-      "options": {
-        "a": "Perform Electrical Maintenance",
-        "b": "Promote Safe Electrical Practices",
-        "c": "Develop Fire Equipment",
-        "d": "Use GFCI",
-        "e": "Follow OSHA Guidelines"
+        "a": "Controller",
+        "b": "Service",
+        "c": "DispatcherServlet",
+        "d": "Repository",
+        "e": "Model"
       },
       "correct": "c"
     },
     {
-      "id": 19,
-      "question": "To learn the procedures and principles regarding the characteristics, supply, use and other issues of ... to be used in cases where the prevention or adequate reduction of risks in the workplace cannot be achieved by collective protection based on technical measures or work organization or working methods. Which of the following is the expression that should come in the blank?",
+      "id": 16,
+      "question": "Which one loads bean definitions, wire beans together, and dispense beans upon request and additionally it adds more enterprise-specific functionality?",
       "options": {
-        "a": "DSE",
-        "b": "PPE",
-        "c": "ALARP",
-        "d": "GEB",
-        "e": "ALARA"
+        "a": "BeanFactory",
+        "b": "ApplicationContext",
+        "c": "ServletContext",
+        "d": "WebApplicationContext",
+        "e": "ConfigurableApplicationContext"
       },
       "correct": "b"
     },
     {
-      "id": 20,
-      "question": "Which of the following is core elements of a safety management system?",
+      "id": 17,
+      "question": "JOKER: What are the core modules of Spring Framework?",
       "options": {
-        "a": "Leadership",
-        "b": "Manager",
-        "c": "DERAM",
-        "d": "GFCI",
-        "e": "OSHA Guidelines"
+        "a": "Core, Context, Web, Data Access",
+        "b": "MVC, Security, Boot, Cloud",
+        "c": "REST, SOAP, GraphQL, WebSocket",
+        "d": "MySQL, PostgreSQL, MongoDB, Redis",
+        "e": "HTML, CSS, JavaScript, TypeScript"
       },
-      "correct": "a"
+      "correct": "a",
+      "isJoker": true
+    },
+    {
+      "id": 18,
+      "question": "JOKER: What is the @Transactional annotation used for?",
+      "options": {
+        "a": "Managing HTTP transactions",
+        "b": "Managing database transactions",
+        "c": "Managing file transactions",
+        "d": "Managing network transactions",
+        "e": "Managing memory transactions"
+      },
+      "correct": "b",
+      "isJoker": true
+    },
+    {
+      "id": 19,
+      "question": "JOKER: What is the application.properties file used for in Spring Boot?",
+      "options": {
+        "a": "Writing Java code",
+        "b": "Creating HTML templates",
+        "c": "Application configuration",
+        "d": "Defining CSS styles",
+        "e": "Writing JavaScript code"
+      },
+      "correct": "c",
+      "isJoker": true
+    },
+    {
+      "id": 20,
+      "question": "JOKER: What is the @PreAuthorize annotation used for in Spring Security?",
+      "options": {
+        "a": "User authentication",
+        "b": "Method-level authorization control",
+        "c": "Password encryption",
+        "d": "Session management",
+        "e": "Cookie management"
+      },
+      "correct": "b",
+      "isJoker": true
     }
   ]
-} 
+}

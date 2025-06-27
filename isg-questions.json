@@ -1,0 +1,244 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is not used for the health assessment of hazards that pose risk?",
+      "options": {
+        "a": "Exposure time",
+        "b": "Exposure length", 
+        "c": "Harmful effects of substance",
+        "d": "Thoughts about the sensitivity of the staff",
+        "e": "Measurement of air pollution"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following technologies is least used by health and safety professionals?",
+      "options": {
+        "a": "Robotics",
+        "b": "Equipment",
+        "c": "Wearables",
+        "d": "Mobile app",
+        "e": "Analytics"
+      },
+      "correct": "e"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following are among the main electrical injuries?",
+      "options": {
+        "a": "Electric",
+        "b": "Current Measurement",
+        "c": "Thermal burns",
+        "d": "Shock face",
+        "e": "Stubbing the toe"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 4,
+      "question": "When did the regulation on DSE come into operation in our country?",
+      "options": {
+        "a": "April 2013",
+        "b": "April 2012",
+        "c": "April 2011",
+        "d": "April 2024",
+        "e": "not yet published"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is not a type of non-ionizing radiation?",
+      "options": {
+        "a": "Extremely Low Frequency",
+        "b": "Very Low Frequency",
+        "c": "Extremely High Frequency",
+        "d": "Radiowaves",
+        "e": "Microwaves"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is one of the important environmental problems in Turkey?",
+      "options": {
+        "a": "Transgenic pollution",
+        "b": "Electromagnetic pollution",
+        "c": "Deforestation",
+        "d": "Erosion",
+        "e": "all of them"
+      },
+      "correct": "e"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a certificate by an international standard issued organization on the environment?",
+      "options": {
+        "a": "4001",
+        "b": "9001",
+        "c": "12001",
+        "d": "14001",
+        "e": "1500"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 8,
+      "question": "The studies to be carried out in determining the environmental impacts of the projects, the measures to be taken to prevent the negative effects, determination and evaluation of the selected location and technology alternatives, and the monitoring and control of the implementation of the projects are within the scope of... Which of the following is the expression that should come in the blank?",
+      "options": {
+        "a": "EIA",
+        "b": "EAI",
+        "c": "AEI",
+        "d": "AIE",
+        "e": "IEA"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is correct?",
+      "options": {
+        "a": "Beta particles pass through concrete",
+        "b": "Beta particles pass through lead",
+        "c": "Beta particles pass through aluminum",
+        "d": "Beta particles pass through paper",
+        "e": "Gamma particles pass through lead"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 10,
+      "question": "A key concept underlying radiation protection programs is keeping each worker's occupational radiation dose... Which of the following is the expression that should come in the blank?",
+      "options": {
+        "a": "As Low As Recordable Achievable",
+        "b": "As Low As Reasonably Achievable",
+        "c": "As Low As Reasonably Actionable",
+        "d": "As Low As Reasonably Activable",
+        "e": "As Low As Reasonably Active"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is correct?",
+      "options": {
+        "a": "Current kills, not voltage",
+        "b": "Voltage kills, not current",
+        "c": "Resistance kills, not current",
+        "d": "None of them are true",
+        "e": "All of them"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is first in the RAM model?",
+      "options": {
+        "a": "Control",
+        "b": "Recognition",
+        "c": "Confirm",
+        "d": "Evaluation",
+        "e": "Anticipation"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is not one of the benefits of using OHS software?",
+      "options": {
+        "a": "Reporting and Metrics",
+        "b": "Manage Documentation",
+        "c": "Monitoring Employee",
+        "d": "Streamline Manual Processes",
+        "e": "Communication Across Multiple Sites"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 14,
+      "question": "After which current value the respiratory muscles can be paralyzed?",
+      "options": {
+        "a": "5 mA",
+        "b": "15 mA",
+        "c": "10 mA",
+        "d": "20 mA",
+        "e": "30 mA"
+      },
+      "correct": "e"
+    },
+    {
+      "id": 15,
+      "question": "Which of the following does not need to be included in the environmental impact assessment?",
+      "options": {
+        "a": "Emission",
+        "b": "Discharge",
+        "c": "Noise control",
+        "d": "Lighting control",
+        "e": "Deep sea discharge"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is not one of the steps of the occupational hygiene program?",
+      "options": {
+        "a": "Identification of health hazards",
+        "b": "Assessment of health hazards",
+        "c": "Control of health hazards",
+        "d": "Keeping records of health hazards",
+        "e": "Training of health hazards"
+      },
+      "correct": "e"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is not one of the biological hazards?",
+      "options": {
+        "a": "Pathogens",
+        "b": "Allergens",
+        "c": "Zoonoses",
+        "d": "Subprions",
+        "e": "Prions"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is not an effective way to prevent electrical fires?",
+      "options": {
+        "a": "Perform Electrical Maintenance",
+        "b": "Promote Safe Electrical Practices",
+        "c": "Develop Fire Equipment",
+        "d": "Use GFCI",
+        "e": "Follow OSHA Guidelines"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 19,
+      "question": "To learn the procedures and principles regarding the characteristics, supply, use and other issues of ... to be used in cases where the prevention or adequate reduction of risks in the workplace cannot be achieved by collective protection based on technical measures or work organization or working methods. Which of the following is the expression that should come in the blank?",
+      "options": {
+        "a": "DSE",
+        "b": "PPE",
+        "c": "ALARP",
+        "d": "GEB",
+        "e": "ALARA"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is core elements of a safety management system?",
+      "options": {
+        "a": "Leadership",
+        "b": "Manager",
+        "c": "DERAM",
+        "d": "GFCI",
+        "e": "OSHA Guidelines"
+      },
+      "correct": "a"
+    }
+  ]
+} 
